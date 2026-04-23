@@ -3,8 +3,69 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fabián Romero | Licenciado en Seguridad e Higiene Laboral</title>
+
+<!-- ═══ SEO BÁSICO ═══ -->
+<title>Fabián Romero | Licenciado en Seguridad e Higiene Laboral · Buenos Aires</title>
+<meta name="description" content="Licenciado en Seguridad e Higiene Laboral habilitado SRT. Más de 12 años de experiencia en CABA y GBA. Programas de seguridad, capacitaciones, estudios de ruido, iluminación, ergonomía y más.">
+<meta name="keywords" content="seguridad e higiene laboral, licenciado seguridad higiene, SRT, Buenos Aires, CABA, GBA, ART, programa de seguridad, capacitaciones laborales, estudio de ruido, ergonomia, carga de fuego, mapa de riesgo, RGRL, RAR">
+<meta name="author" content="Fabián Romero">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://fabianromero.com.ar/">
+
+<!-- ═══ OPEN GRAPH (Facebook, LinkedIn, WhatsApp) ═══ -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://fabianromero.com.ar/">
+<meta property="og:title" content="Fabián Romero | Licenciado en Seguridad e Higiene Laboral">
+<meta property="og:description" content="Asesoramiento profesional en seguridad e higiene laboral para empresas de todos los rubros. Habilitado SRT. CABA, GBA y zona de influencia.">
+<meta property="og:image" content="https://fabianromero.com.ar/og-image.jpg">
+<meta property="og:locale" content="es_AR">
+<meta property="og:site_name" content="Fabián Romero — Seguridad e Higiene Laboral">
+
+<!-- ═══ TWITTER / X ═══ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fabián Romero | Licenciado en Seguridad e Higiene Laboral">
+<meta name="twitter:description" content="Asesoramiento profesional en seguridad e higiene laboral. Habilitado SRT. CABA y GBA.">
+<meta name="twitter:image" content="https://fabianromero.com.ar/og-image.jpg">
+
+<!-- ═══ FAVICON ═══ -->
+<!-- Reemplazar favicon.ico y favicon.png por los archivos reales -->
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+<!-- ═══ SCHEMA.ORG (datos estructurados para Google) ═══ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Fabián Romero",
+  "jobTitle": "Licenciado en Seguridad e Higiene Laboral",
+  "description": "Profesional habilitado SRT con más de 12 años de experiencia en seguridad e higiene laboral en CABA, GBA y zona de influencia.",
+  "url": "https://fabianromero.com.ar",
+  "telephone": "+54-9-11-0000-0000",
+  "email": "fabianromero@email.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Buenos Aires",
+    "addressCountry": "AR"
+  },
+  "areaServed": ["CABA", "Gran Buenos Aires", "Argentina"],
+  "knowsAbout": [
+    "Seguridad e Higiene Laboral",
+    "Normativa SRT",
+    "ISO 45001",
+    "Higiene Industrial",
+    "Ergonomía Laboral",
+    "Plan de Emergencias"
+  ],
+  "sameAs": []
+}
+</script>
+
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<!-- reCAPTCHA v3 — reemplazar YOUR_SITE_KEY por la clave real de Google -->
+<script src="https://www.google.com/recaptcha/api.js?render=6LcJb8YsAAAAAGYdLzoEMcspIXT-8Wyw_2ho9Bxu" async defer></script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -60,11 +121,11 @@
     <div>
       <div class="hero-stats">
         <div class="stat-item">
-          <div class="stat-number">+50</div>
+          <div class="stat-number">+200</div>
           <div class="stat-label">Empresas asesoradas</div>
         </div>
         <div class="stat-item">
-          <div class="stat-number">10</div>
+          <div class="stat-number">12</div>
           <div class="stat-label">Años de experiencia</div>
         </div>
         <div class="stat-item">
@@ -551,6 +612,12 @@
           <label for="mensaje">Mensaje</label>
           <textarea id="mensaje" placeholder="Contame brevemente tu situación o consulta..."></textarea>
         </div>
+        <!-- Honeypot: campo invisible para bots (no mostrar al usuario) -->
+        <div class="honeypot-wrap" aria-hidden="true">
+          <input type="text" id="honeypot" name="honeypot" tabindex="-1" autocomplete="off" placeholder="No completar">
+        </div>
+        <!-- Token reCAPTCHA v3 -->
+        <input type="hidden" id="recaptcha-token" name="recaptcha-token">
         <button class="form-submit" onclick="submitForm()">Enviar mensaje →</button>
         <p class="form-note">🔒 Tu información es confidencial y no será compartida con terceros.</p>
         <div class="success-msg" id="success-msg">
