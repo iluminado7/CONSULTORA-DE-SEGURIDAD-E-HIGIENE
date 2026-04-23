@@ -38,7 +38,7 @@
 
   // Form submit → WhatsApp
   // ⚠️ Reemplazar con el número real de Fabián (código de país + número, sin + ni espacios)
-  const WA_NUMBER = '5491130300123';
+  const WA_NUMBER = '5491168733223';
 
   function submitForm() {
     const nombre   = document.getElementById('nombre').value.trim();
